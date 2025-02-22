@@ -17,19 +17,27 @@
         <div class="navbar">
             <div class="logo">
 
-                <img src="c:\Users\Lenovo\OneDrive\Documents\saitche\logo.png" width="100px">
+                <img src="logo.png" width="100px">
             </div>
             <nav>
-                <ul id="MenuItems">
+                <ul class="nav-links">
                     <li><a href="index.html">Начало</a></li>
-                    <li><a href="products.html">Продукти</a></li>
-                    <li><a href="">За нас</a></li>
+                    <li class="dropdown">
+                        <a href="products.html">Продукти &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="winter.html">Зимни дрехи</a></li>
+                            <li><a href="summer.html">Летни дрехи</a></li>
+                            <li><a href="banski.html">Бански</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="about.html">За нас</a></li>
                     <li><a href="">Профил</a></li>
-                   
                 </ul>
             </nav>
             <a href="cart.html">
-                <img src="c:\Users\Lenovo\OneDrive\Documents\saitche\cart.png" width="30px" height="30px" alt="Cart">
+                <img src="cart.png" width="30px" height="30px" alt="Cart">
             </a>
             <img src="menu.png" width="30px"height="30px" class="menu-icon" onclick="menutoggle()">
         </div>
@@ -61,7 +69,7 @@
                         <option>S</option>
                     </select>
                     <input type="number" value="1">
-                    <a href="#" class="btn">Добави в количка</a>
+                    <a href="cart.html" class="btn">Добави в количка</a>
         
                     <h3>Детайли за продукт</h3>
                     <p class="description">Търсите елегантен и удобен комплект? Представяме ви нашето специално предложение – модерен и стилен комплект, създаден за увереност и комфорт през целия ден!</p>
@@ -126,11 +134,6 @@
         </div>
       </div>
 
-
-      
-      
-      
-     
 <!--------footer---------->
 <div class="footer">
     <div class="container">
@@ -140,7 +143,7 @@
                 <p>Изтеглете нашето приложение за Android и IOS. </p>
             </div>
             <div class="footer-col-2">
-                <img src="" width="100" height="200" alt="Logo"> <!-- Increased image size -->
+                <img src="logo.png"  >
                 <p>Нашата цел е да накараме всяка жена да се чувства уникална и неповторима.</p>
             </div>
         </div>

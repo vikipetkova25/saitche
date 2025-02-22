@@ -61,10 +61,12 @@
         flex-basis: 50%;
         min-width: 300px;
     }
-    .col-2 img{
+    .col-2 img {
         max-width: 100%;
         padding: 50px 0;
+        margin-left: 50px; /* Adjust as needed */
     }
+    
     .col-2 h1{
         font-size: 50px;
         line-height: 60px;
@@ -107,6 +109,8 @@
         margin: auto;
         padding-left: 25px;
         padding-right: 25px;
+     
+        
     } 
     
     .col-4{
@@ -119,13 +123,13 @@
     .col-4 img{
         width: 100%;
     }
-    .title{
+    .small-container title{
         text-align: center;
-        margin: 0 auto 80 px;
+        margin: 1 auto 80 px;
         position: relative;
         line-height: 60px;
         color: #555;
-    }
+            }
     .title::after{
         content: '';
         background: #d08379;
@@ -165,10 +169,20 @@
         position: relative;
         line-height: 60px;
         color: #555;
-        margin-top: -20px; 
+        margin-top: 20px; 
         padding-bottom: 15px; 
     }
     
+    h2 title
+    {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+        margin-top: 20px; 
+        padding-bottom: 15px; 
+    }
     .title::after {
         content: '';
         background: #d08379;
@@ -271,7 +285,7 @@
 .third h4,
 .third .rating,
 .third p {
-    margin-top: 10px;  
+    margin-top: 1px;  
 }
 
 
@@ -567,54 +581,6 @@
 
 
 
-.first img {
-    margin-bottom: 200px; 
-}
-
-.first h4,
-.first .rating,
-.first p {
-    margin-top: 10px;  
-}
-
-
-.second img {
-    margin-bottom: 250px; 
-}
-
-.second h4,
-.second .rating,
-.second p {
-    margin-top: 10px; 
-}
-
-
-.third img {
-    margin-top: 100px; 
-    margin-bottom: 10px; 
-}
-
-
-.third h4,
-.third .rating,
-.third p {
-    margin-top: 10px;  
-}
-
-
-.four img {
-   
-    margin-bottom: 50px;
-}
-
-
-.four h4,
-.four .rating,
-.four p {
-    margin-top: 10px;  
-}
-
-
 .offer-img {
     transition: all 0.3s ease;  
 }
@@ -644,10 +610,10 @@
 /*--------footer--------*/
 
 .footer {
-    background: #000;
+    background: #000000;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 20px 0 10px; /* Reduced padding to make the footer smaller */
+  
     text-align: right; /* Move text to the right */
 }
 
@@ -682,7 +648,7 @@
 }
 
 .footer-col-2 img {
-    width: 200px; /* Increased image width */
+    width:90px; /* Increased image width */
     height: auto; /* Maintains aspect ratio */
     margin-bottom: 20px;
 }
@@ -936,3 +902,166 @@ tr{
     margin: 0 10px; /* Adds space between the images */
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+   
+    padding: 10px;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #ff523b;
+}
+
+/* Dropdown Меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    text-align: left;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+    color: #ff523b;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* Контактна страница */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Форма за контакт */
+.contact-form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #ff523b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #af3a2d;
+}
+
+/* Контактна информация */
+.contact-info {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contact-info i {
+    color: #ff523b;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+/* Глобални настройки */
+* {
+   
+   
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+.checkout-box {
+    margin-left: 90px;
+    margin-right: 0;
+  
+}

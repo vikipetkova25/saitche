@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Gabriela&Victoria Couture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="100px">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Начало</a></li>
+                        <li class="dropdown">
+                            <a href="products.html">Продукти &#9662;</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="winter.html">Зимни дрехи</a></li>
+                                <li><a href="summer.html">Летни дрехи</a></li>
+                                <li><a href="banski.html">Бански</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="about.html">За нас</a></li>
+                        <li><a href="">Профил</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="cart.png" width="30px" height="30px" alt="Cart">
+                </a>
+                <img src="menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Основно съдържание -->
+    <div class="contact-container">
+        <h2>Свържете се с нас</h2>
+        <p>Ако имате въпроси, не се колебайте да ни изпратите съобщение.</p>
+        
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Име</label>
+                <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                
+                <label for="email">Имейл</label>
+                <input type="email" id="email" name="email" placeholder="Вашият имейл" required>
+                
+                <label for="message">Съобщение</label>
+                <textarea id="message" name="message" rows="5" placeholder="Вашето съобщение" required></textarea>
+                
+                <button type="submit" class="btn">Изпрати</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Контактна информация</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Варна, България</p>
+            <p><i class="fas fa-phone"></i> +359 888 123 456</p>
+            <p><i class="fas fa-envelope"></i> support@gvcouture.bg</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>© 2024 Gabriela&Victoria Couture. Всички права запазени.</p>
+        </div>
+    </div>
+
+    <script>
+        function menutoggle() {
+            let menu = document.querySelector('.nav-links');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+
