@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма за обратна връзка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Форма за обратна връзка</h1>
+        <p>Ще се радваме да чуем вашите мисли, предложения, притеснения или проблеми, за да можем да се подобрим!</p>
+        
+        <form action="#" method="post">
+            <label>Тип обратна връзка:</label>
+            <div class="feedback-type">
+                <input type="radio" name="type" id="comments" value="Коментари">
+                <label for="comments">Коментари</label>
+                
+                <input type="radio" name="type" id="suggestions" value="Предложения">
+                <label for="suggestions">Предложения</label>
+                
+                <input type="radio" name="type" id="questions" value="Въпроси">
+                <label for="questions">Въпроси</label>
+            </div>
+            
+            <label for="feedback">Опишете вашия отзив: *</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+            <label for="name">Име *</label>
+            <div class="name-fields">
+                <input type="text" id="first-name" name="first-name" placeholder="Първо име" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Фамилия" required>
+            </div>
+            
+            <label for="email">Имейл *</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            
+            <button type="submit">Изпратете отзива</button>
+        </form>
+    </div>
+</body>
+</html>
+  
+
+<!--opravi css i go napravi da matchva drte stranici-->
