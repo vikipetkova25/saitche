@@ -1452,3 +1452,84 @@ footer a:hover {
         font-size: 14px;
     }
 }
+
+
+
+
+
+h2 {
+    color: #555;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+p, li {
+    line-height: 1.6;
+    font-size: 1em;
+    text-align: left;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.navbar .logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav-links li {
+    display: inline;
+ 
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #f8bcbc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d64c6c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
