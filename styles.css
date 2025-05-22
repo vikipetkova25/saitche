@@ -123,25 +123,26 @@
     .col-4 img{
         width: 100%;
     }
-    .small-container title{
-        text-align: center;
-        margin: 1 auto 80 px;
-        position: relative;
-        line-height: 60px;
-        color: #555;
-            }
-    .title::after{
-        content: '';
-        background: #d08379;
-        width: 80px;
-        height: 5px;
-        border-radius: 5px;
-        position: absolute;
-        bottom: 0;
-        left:50%;
-        transform: translateX(-50%);
-    }
-    
+   .small-container .title {
+    text-align: center;
+    margin: 80px auto; /* Top and bottom margin = 80px, horizontal = auto */
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #d08379;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
     h4{
         color: #555;
         font-weight: normal;
@@ -650,10 +651,13 @@
 }
 
 .footer-col-2 img {
-    width:90px; /* Increased image width */
-    height: auto; /* Maintains aspect ratio */
+    width: 90px; /* Increased image width */
+    height: 90px; /* Set fixed height to match width */
+    object-fit: cover; /* Ensures the image fills the circle */
+    border-radius: 50%; /* Makes the image circular */
     margin-bottom: 20px;
 }
+
 
 .footer-col-3, .footer-col-4 {
     flex-basis: 30%;
@@ -858,7 +862,7 @@ td input{
 
 }
 td a{
-    color: #ff523b;
+    color: #f7a3d7;
     font-size: 12px;
 
 }
@@ -869,7 +873,7 @@ td a{
 }
 
 .total-price {
-    border-top: 3px solid #ff523b; /* Orange line on the container */
+    border-top: 3px solid #312726; /* Orange line on the container */
     padding-top: 10px; /* Space between the top border and content */
 }
 
@@ -891,7 +895,7 @@ th {
     font-weight: bold; /* Bold for the header */
 }
 tr{
-    border-top: 3px solid #ff523b;
+    border-top: 3px solid #9e4c41;
 }
 
 .col-2-2{
@@ -980,7 +984,7 @@ tr{
 
 /* Форма за контакт */
 .contact-form {
-    background: white;
+    background: rgb(229, 229, 249);
     padding: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -1008,7 +1012,7 @@ tr{
 
 .contact-form button {
     width: 100%;
-    background: #ff523b;
+    background: #f6b8db;
     color: white;
     padding: 10px;
     border: none;
@@ -1108,7 +1112,7 @@ tr{
 
 .payment-form button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #67ec86;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1228,6 +1232,14 @@ tr{
 /* blog*/
 
 /* Blog Posts Section */
+
+.centered-heading-2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5em; /* по желание */
+    color: #333; /* по желание */
+}
+
 .blog-posts {
     display: flex;
     flex-direction: column;
@@ -1247,7 +1259,7 @@ tr{
 }
 
 .blog-post h2 {
-    color: #ff523b;
+    color: #ab9e9d;
     font-size: 24px;
 }
 
@@ -1260,7 +1272,7 @@ tr{
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #ff523b;
+    background: #ba8ee3;
     color: white;
     text-decoration: none;
     border-radius: 5px;
